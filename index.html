@@ -95,7 +95,27 @@
     .card p {
       color: #ddd;
     }
+	.logo-container {
+  text-align: center; /* Centruje obrazek */
+  margin: 0 auto; /* Wyrównanie do środka */
+	}
 
+/* Responsywność logo */
+	.logo-container img {
+  max-width: 100%; /* Ustawia maksymalną szerokość obrazka na 100% szerokości kontenera */
+  height: auto; /* Utrzymuje proporcje obrazka */
+	}
+	@media (max-width: 768px) {
+  .logo-container img {
+    max-width: 80%; /* Zmniejsza szerokość logo na mniejszych ekranach */
+ 	 }
+	}
+
+	@media (max-width: 480px) {
+  .logo-container img {
+    max-width: 70%; /* Jeszcze mniejsze logo na bardzo małych ekranach */
+ 	 }
+	}
     footer {
       background-color: #111;
       color: #ccc;
@@ -123,7 +143,7 @@
 </header>
 
 <section>
-  <div class="features">
+  <div class="logo-container">
       <img src="https://gawjar.github.io/EscapeLublin/logo.jpg" alt="Logo">
   </div>
 </section>
