@@ -3,145 +3,238 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Escape Lublin – Gry miejskie w Twoim telefonie</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <title>Escape Lublin – Gra miejska w Twoim telefonie</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
   <style>
-    body {
+    :root {
+      --color-main: #A47864; /* kolor roku 2025 */
+      --color-dark: #1B1F29;
+      --color-light: #f2f2f2;
+      --color-accent: #FFD369;
+    }
+
+    * {
       margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background-color: #f7f9fc;
-      color: #222;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #1B1F29, #3e4459);
+      color: var(--color-light);
+      line-height: 1.6;
     }
 
     header {
-      background-color: #004d7a;
-      color: white;
-      padding: 60px 20px;
+      padding: 80px 20px;
       text-align: center;
+      background: url('https://images.unsplash.com/photo-1513151233558-d860c5398176') center/cover no-repeat;
+      background-blend-mode: multiply;
+      background-color: rgba(0,0,0,0.6);
+      color: white;
     }
 
     header h1 {
-      margin: 0;
-      font-size: 3em;
+      font-size: 3rem;
+      margin-bottom: 20px;
     }
 
     header p {
-      font-size: 1.2em;
-      margin-top: 10px;
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 30px;
     }
 
     .cta-button {
-      margin-top: 25px;
-      background-color: #00bcd4;
+      background-color: var(--color-main);
       color: white;
       padding: 15px 30px;
-      font-size: 1em;
       border: none;
+      font-size: 1rem;
       border-radius: 8px;
       cursor: pointer;
-      transition: background-color 0.3s ease;
+      transition: background 0.3s ease;
     }
 
     .cta-button:hover {
-      background-color: #0097a7;
+      background-color: #8c604d;
     }
 
     section {
       padding: 60px 20px;
-      max-width: 1000px;
-      margin: 0 auto;
+      max-width: 1100px;
+      margin: auto;
     }
 
-    .features {
-      display: flex;
-      flex-wrap: wrap;
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 40px;
+      color: var(--color-accent);
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 30px;
-      justify-content: center;
     }
 
-    .feature {
-      flex: 1 1 300px;
-      background-color: white;
-      border-radius: 10px;
+    .card {
+      background-color: #2e3440;
       padding: 20px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     }
 
-    .feature h3 {
-      margin-top: 0;
-      color: #004d7a;
+    .card h3 {
+      margin-bottom: 15px;
+      color: var(--color-accent);
     }
 
-    .testimonials, .about {
-      background-color: #ffffff;
-      border-radius: 10px;
-      margin-top: 40px;
-      padding: 30px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    }
-
-    .testimonial {
-      margin-bottom: 20px;
+    .card p {
+      color: #ddd;
     }
 
     footer {
+      background-color: #111;
+      color: #ccc;
       text-align: center;
-      padding: 30px 20px;
-      background-color: #004d7a;
-      color: white;
+      padding: 40px 20px;
+    }
+
+    footer p {
+      margin-bottom: 10px;
     }
 
     @media (max-width: 768px) {
       header h1 {
-        font-size: 2em;
+        font-size: 2rem;
       }
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Escape Lublin</h1>
-    <p>Odkryj Lublin na nowo dzięki interaktywnym grom miejskim</p>
-    <button class="cta-button">Pobierz aplikację</button>
-  </header>
+<header>
+  <h1>Escape Lublin</h1>
+  <p>Interaktywna gra miejska w Twoim smartfonie – zwiedzaj, rozwiązuj zagadki, odkrywaj nieznane zakątki Lublina!</p>
+  <button class="cta-button">Pobierz aplikację</button>
+</header>
 
-  <section>
-    <h2 style="text-align:center;">Dlaczego Escape Lublin?</h2>
-    <div class="features">
-      <div class="feature">
-        <h3>Gry miejskie na żywo</h3>
-        <p>Zwiedzaj miasto, rozwiązuj zagadki i zdobywaj punkty – wszystko w aplikacji mobilnej.</p>
-      </div>
-      <div class="feature">
-        <h3>Dla każdego</h3>
-        <p>Doskonałe dla studentów, rodzin, turystów i mieszkańców – graj sam lub w grupie!</p>
-      </div>
-      <div class="feature">
-        <h3>Autentyczne lokalizacje</h3>
-        <p>Zabierz telefon i ruszaj w teren – poznaj Lublin z zupełnie nowej perspektywy.</p>
-      </div>
+<section>
+  <div class="features">
+      <img src="images/logo.jpg" alt="logo">
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">Dlaczego warto?</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Niska cena</h3>
+      <p>Trasę w pojedynkę 25zł, zespół 50zł</p>
     </div>
-
-    <div class="testimonials">
-      <h2>Opinie uczestników</h2>
-      <div class="testimonial">
-        <p>„Mega zabawa! Nie wiedziałem, że Lublin kryje tyle tajemnic!” – <strong>Mateusz, student UMCS</strong></p>
-      </div>
-      <div class="testimonial">
-        <p>„Świetna atrakcja dla naszej klasy podczas wycieczki. Polecam każdemu nauczycielowi.” – <strong>Pani Ewa, nauczycielka</strong></p>
-      </div>
+    <div class="card">
+      <h3>Pełna elastyczność</h3>
+      <p>Bez rezerwacji, bez limitu osób. Graj kiedy i z kim chcesz.</p>
     </div>
-
-    <div class="about">
-      <h2>O nas</h2>
-      <p>Escape Lublin to projekt pasjonatów historii i technologii. Łączymy miejskie zagadki z nowoczesną aplikacją, która prowadzi Cię przez najbardziej fascynujące zakątki miasta.</p>
+    <div class="card">
+      <h3>Dostępność i wygoda</h3>
+      <p>Android i iOS.Prosty sposób płatności (blik, przelew)  </p>
     </div>
-  </section>
+	<div class="card">
+      <h3>Zagadki i szyfry</h3>
+      <p>Łamigłówki inspirowane escape roomami w plenerze. </p>
+    </div>
+	<div class="card">
+      <h3>Trasy dopasowane do Ciebie</h3>
+      <p>Duża ilość tras w mieście: rodzinne, edukacyjne, turystyczne – wybierz swoją przygodę </p>
+    </div>
+	<div class="card">
+      <h3>Rozrywka</h3>
+      <p>Aktywność na świeżym powietrzu przy jednoczesnej zabawie, zamiast siedzenia w domu </p>
+    </div>
+  </div>
+</section>
 
-  <footer>
-    <p>&copy; 2025 Escape Lublin. Wszelkie prawa zastrzeżone.</p>
-  </footer>
+<section>
+  <h2 class="section-title">Dla kogo?</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Studenci i uczniowie</h3>
+      <p>Idealna forma spędzania wolnego czasu – 80% studentów mówi TAK!</p>
+    </div>
+    <div class="card">
+      <h3>Turyści</h3>
+      <p>Zwiedzanie Lublina w formie przygody – szybkie, tanie i mobilne.</p>
+    </div>
+    <div class="card">
+      <h3>Mieszkańcy</h3>
+      <p>Chcesz poznać Lublin na nowo? Czekają na Ciebie sekrety miasta!</p>
+    </div>
+    <div class="card">
+      <h3>Szkoły i instytucje</h3>
+      <p>Wykorzystaj trasę edukacyjną jako atrakcyjną formę lekcji terenowej.</p>
+    </div>
+	<div class="card">
+      <h3>Rodziny z dziećmi</h3>
+      <p>Przygody rodzinne pełne zagadek i skarbów! </p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">Model biznesowy</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Freemium</h3>
+      <p>Jedna trasa za darmo. Podpowiedzi i dodatki płatne od 1 zł</p>
+    </div>
+	<div class="card">
+      <h3>Trasy</h3>
+      <p>Korzystanie z płatnych tras (25-50zł), bez zobowiązań</p>
+    </div>
+    <div class="card">
+      <h3>Subskrypcja</h3>
+      <p>Dostęp do wyjątkowych tras, zniżek w lokalach, bonusów – już od 5 zł/mies.</p>
+    </div>
+ 	<div class="card">
+      <h3>Subskrypcja premium</h3>
+      <p>100-200 zł/mies. za wszystkie trasy i nieograniczoną liczbę przejść</p>
+    </div>
+    <div class="card">
+      <h3>Reklamy & Partnerstwa</h3>
+      <p>Zniżki dla graczy, promocje produktów lokalnych partnerów</p>
+    </div>
+    <div class="card">
+      <h3>Eventy</h3>
+      <p>Dedykowane trasy na wydarzenia, integracje, promocje – od 1000 zł/trasa</p>
+    </div>
+	<div class="card">
+      <h3>Dodatki</h3>
+      <p>Nowe punkty trasy (5 zł), podpowiedzi (1 zł)</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">Roadmap projektu</h2>
+  <div class="card" style="max-width: 800px; margin: auto;">
+    <p><strong>Marzec:</strong> Start projektu, model biznesowy CANVAS<br>
+	<strong>Kwiecień:</strong> Warsztaty, budowa zespołu, testy koncepcji<br>
+       <strong>Maj:</strong> Ankietyzacja studentów (80% zainteresowanych!), rozmowy z Urzędem Miasta<br>
+       <strong>Czerwiec:</strong> Wniosek do Inkubatora, współpraca z przewodnikiem, tworzenie tras<br>
+	<strong>Lipiec:</strong> Rozpoczęcie developmentu aplikacji<br>
+	<strong>Sierpień:</strong> Testy beta, kampania promocyjna<br>
+       <strong>Wrzesień:</strong> Gotowa aplikacja i oficjalny start</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Escape Lublin</p>
+  <p>Kontakt: i.korzec@pollub.pl </p>
+</footer>
 
 </body>
 </html>
